@@ -5,7 +5,7 @@
 {% block content %}
     <h1>Home</h1>
     {% for article in articles %}
-        <h3>{{ article.title }}</h3>
+        <h3><a href="{% url 'article' article.id %}">{{ article.title }}</a></h3>
         <!--<p>--> {% comment %} {{ article.text|safe }} {% endcomment %} <!--</p>-->
         {{ article.get_short_text }}
     {% endfor %}
