@@ -6,7 +6,8 @@
     <h1>Home</h1>
     {% for article in articles %}
         <h3>{{ article.title }}</h3>
-        <p>{{ article.text|safe }}</p>
+        <!--<p>--> {% comment %} {{ article.text|safe }} {% endcomment %} <!--</p>-->
+        {{ article.get_short_text }}
     {% endfor %}
     <!-- <p>
         <span>
