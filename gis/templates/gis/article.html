@@ -7,5 +7,5 @@
 {% block content %}
     <h1>Articles</h1>
     <h3>{{ article.title }}</h3>
-    <div>{{ article.text}}</div>
+    <div>{{ article.text|safe}}</div>
 {% endblock %}
