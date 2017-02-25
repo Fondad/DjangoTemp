@@ -4,9 +4,13 @@
 {% endblock %}
 {% block content %}
     <h1>Home</h1>
-    <p>
+    {% for article in articles %}
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.text|safe }}</p>
+    {% endfor %}
+    <!-- <p>
         <span>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugit nam nulla reiciendis rem! Adipisci commodi exercitationem ipsa nesciunt ut. Architecto exercitationem explicabo illo ipsa maxime optio quam, vel veniam?</span><span>Aliquam at cupiditate fuga neque non officia porro, recusandae repellat sint vel. Ab culpa esse harum, impedit mollitia nisi omnis qui repudiandae sed sequi sint vero? Animi optio perferendis quis!</span><span>Animi architecto assumenda culpa et exercitationem facilis iste modi pariatur, quis recusandae, rem sed voluptatibus. Alias, amet deserunt ea eos excepturi fuga id, impedit laboriosam perferendis porro, quidem ut velit.</span><span>Distinctio esse labore laboriosam odio officia ratione rerum sit. A asperiores consequatur dicta dolor ducimus excepturi inventore libero nemo non, quo ratione rerum soluta tempora temporibus ullam unde voluptate voluptates.</span><span>Ad asperiores deserunt dolores doloribus eius, eligendi enim esse ex expedita facere hic illo illum impedit iusto libero magni modi nihil odit optio praesentium reiciendis tempore ullam velit voluptas voluptate?
         </span>
-    </p>
+    </p> -->
 {% endblock %}
